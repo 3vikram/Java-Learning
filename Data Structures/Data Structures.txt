@@ -22,8 +22,8 @@ ArrayList<String> olympicSports = new ArrayList<String>();
 HashMap<String, Integer> hostCities = new HashMap<String, Integer>();
 
     hostCities.put("Beijing", 2008);
-		hostCities.put("London", 2012);
-		hostCities.put("Rio de Janeiro", 2016);
+    hostCities.put("London", 2012);
+    hostCities.put("Rio de Janeiro", 2016);
     
     hostCities.keySet()
     hostCities.ValueSet()
