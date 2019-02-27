@@ -13,6 +13,11 @@ class Dog {
     		System.out.println("Woof!");
   	}
 	
+	// run method which takes feet of type int as an argument
+	public void run(int feet) {
+    		System.out.println("Your dog ran " + feet + " feet!");
+  	}
+	
 	// main method, here an instance of Dog class is created and this instance object is named as 'spike'
 	public static void main(String[] args) {
     
@@ -20,5 +25,7 @@ class Dog {
 		
 		// bark() method called with the object instance instantiated
 		spike.bark();
+		// run() method called with the object instance instantiated and an integer is passed as an argument
+		spike.run(25);
 	}
 }
