@@ -12,7 +12,7 @@ class Coffee extends Beverage{
 
 	public static void main(String[] args) {
 		Coffee myOrder = new Coffee();
-    myOrder.addSugar(2);
-    myOrder.isFull();
+    		myOrder.addSugar(2);
+	    	myOrder.isFull();
 	}
 }
