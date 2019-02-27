@@ -18,14 +18,21 @@ class Dog {
     		System.out.println("Your dog ran " + feet + " feet!");
   	}
 	
+	// getAge() method retreives the dog's age
+	public int getAge() {
+    		return age;
+  	}
+	
 	// main method, here an instance of Dog class is created and this instance object is named as 'spike'
 	public static void main(String[] args) {
     
-    		Dog spike = new Dog(5);
+    		Dog spike = new Dog(5); // Object 'spike' is created by passing the dog's age as an argument
 		
 		// bark() method called with the object instance instantiated
 		spike.bark();
 		// run() method called with the object instance instantiated and an integer is passed as an argument
 		spike.run(25);
+		int spikeAge = spike.getAge();
+    		System.out.println(spikeAge);
 	}
 }
