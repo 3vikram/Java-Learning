@@ -17,7 +17,7 @@ ArrayList<String> olympicSports = new ArrayList<String>();
     olympicSports.clear()
     olympicSports.removeAll(arrlist2); // removes the arrlist2 elements present in olympicSports
     
-    Source: https://www.geeksforgeeks.org/arraylist-in-java/
+Source: https://www.geeksforgeeks.org/arraylist-in-java/
     
 HashMap<String, Integer> hostCities = new HashMap<String, Integer>();
 
@@ -39,3 +39,5 @@ HashMap<String, Integer> hostCities = new HashMap<String, Integer>();
     hostCities.remove("Beijing")
     
     HashMap doesn’t allow duplicate keys but allows duplicate values.
+    
+Source: https://www.geeksforgeeks.org/java-util-hashmap-in-java/
