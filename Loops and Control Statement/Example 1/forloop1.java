@@ -12,8 +12,8 @@ public class TemperaturesC {
 		weeklyTemperatures.add(2, 111);
 
 		for (int i = 0; i < weeklyTemperatures.size(); i++) {
-      System.out.println(weeklyTemperatures.get(i));
-    }
+      			System.out.println(weeklyTemperatures.get(i));
+    		}
 
 	}
 }
