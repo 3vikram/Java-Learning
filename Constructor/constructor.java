@@ -17,5 +17,8 @@ class Dog {
 	public static void main(String[] args) {
     
     		Dog spike = new Dog(5);
+		
+		// bark() method called with the object instance instantiated
+		spike.bark();
 	}
 }
