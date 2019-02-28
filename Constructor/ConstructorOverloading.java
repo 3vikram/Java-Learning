@@ -34,7 +34,7 @@ class Dog {
 	public static void main(String[] args) {
     
     		Dog spike = new Dog(5); // Object 'spike' is created by passing the dog's age as an argument
-        Dog tommy = new Dog(7, "tomm"); // Constructor Overloading
+        	Dog tommy = new Dog(7, "tomm"); // Constructor Overloading
 		
 		// bark() method called with the object instance instantiated
 		spike.bark();
