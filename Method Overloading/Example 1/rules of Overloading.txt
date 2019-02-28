@@ -1,0 +1,28 @@
+Method Overloading or static polymorphism is a feature that allows a class to have more than one method having the same name, if their argument lists are different. It is similar to constructor overloading in Java, that allows a class to have more than one constructor having different argument lists.
+
+Three ways to overload a method
+
+In order to overload a method, the argument lists of the methods must differ in either of these:
+1. Number of parameters.
+For example: This is a valid case of overloading
+
+add(int, int)
+add(int, int, int)
+
+2. Data type of parameters.
+For example: This is a valid case of overloading
+
+add(int, int)
+add(int, float)
+
+3. Sequence of Data type of parameters.
+For example: This is a valid case of overloading
+
+add(int, float)
+add(float, int)
+
+Invalid case of method overloading:
+When I say argument list, I am not talking about return type of the method, for example if two methods have same name, same parameters and have different return type, then this is not a valid method overloading example. This will throw compilation error.
+
+int add(int, int)
+float add(int, int)
