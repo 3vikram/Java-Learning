@@ -1,0 +1,40 @@
+When we do not mention any access modifier, it is called default access modifier. The scope of this modifier is limited to the package only. This means that if we have a class with the default access modifier in a package, only those classes that are in this package can access this class. No other class outside this package can access this class. Similarly, if we have a default method or data member in a class, it would not be visible in the class of another package. Lets see an example to understand this,
+
+In Addition.java,
+
+package abcpackage;
+
+public class Addition {
+   /* Since we didn't mention any access modifier here, it would
+    * be considered as default.
+    */
+   int addTwoNumbers(int a, int b){
+	return a+b;
+   }
+}
+
+In Test.java,
+
+package xyzpackage;
+
+/* We are importing the abcpackage
+ * but still we will get error because the
+ * class we are trying to use has default access
+ * modifier.
+ */
+import abcpackage.*;
+public class Test {
+   public static void main(String args[]){
+	Addition obj = new Addition();
+        /* It will throw error because we are trying to access
+         * the default method in another package
+         */
+	obj.addTwoNumbers(10, 21);
+   }
+}
+
+Result:
+
+Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+The method addTwoNumbers(int, int) from the type Addition is not visible
+at xyzpackage.Test.main(Test.java:12)
