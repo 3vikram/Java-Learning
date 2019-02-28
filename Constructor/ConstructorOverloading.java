@@ -9,9 +9,9 @@ class Dog {
   	}
   
   // Constructor Overloading or Static Polymorphism were autowiring happens at compile time
-  public Dog(int dogsAge, String dogsName) {
+  	public Dog(int dogsAge, String dogsName) {
     		age = dogsAge;
-        name = dogsName;
+        	name = dogsName;
   	}
   
 	// bark method which prints a statement
