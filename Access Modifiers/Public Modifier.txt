@@ -1,0 +1,27 @@
+The members, methods and classes that are declared public can be accessed from anywhere. This modifier doesn’t put any restriction on the access.
+
+Addition.java,
+
+package abcpackage;
+
+public class Addition {
+
+   public int addTwoNumbers(int a, int b){
+	return a+b;
+   }
+}
+
+Test.java,
+
+package xyzpackage;
+import abcpackage.*;
+class Test{
+   public static void main(String args[]){
+      Addition obj = new Addition();
+      System.out.println(obj.addTwoNumbers(100, 1));
+   }
+}
+
+Result:
+
+101
