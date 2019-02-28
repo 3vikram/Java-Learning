@@ -1,0 +1,30 @@
+Protected data member and method are only accessible by the classes of the same package and the subclasses present in any package. You can also say that the protected access modifier is similar to default access modifier with one exception that it has visibility in sub classes.
+
+Classes cannot be declared protected.
+
+In this example the class Test which is present in another package is able to call the addTwoNumbers() method, which is declared protected. This is because the Test class extends class Addition and the protected modifier allows the access of protected members in subclasses (in any packages).
+
+Addition.java,
+
+package abcpackage;
+public class Addition {
+
+   protected int addTwoNumbers(int a, int b){
+	return a+b;
+   }
+}
+
+Test.java,
+
+package xyzpackage;
+import abcpackage.*;
+class Test extends Addition{
+   public static void main(String args[]){
+	Test obj = new Test();
+	System.out.println(obj.addTwoNumbers(11, 22));
+   }
+}
+
+Result:
+
+33
