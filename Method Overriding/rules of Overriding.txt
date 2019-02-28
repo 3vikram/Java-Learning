@@ -1,0 +1,22 @@
+1. Argument list: The argument list of overriding method (method of child class) must match the Overridden method(the method of        parent class). The data types of the arguments and their sequence should exactly match.
+
+2. Access Modifier of the overriding method (method of subclass) cannot be more restrictive than the overridden method of parent class. For e.g. if the Access Modifier of parent class method is public then the overriding method (child class method ) cannot have private, protected and default Access modifier,because all of these three access modifiers are more restrictive than public.
+
+For e.g. This is not allowed as child class disp method is more restrictive(protected) than base class(public)
+
+class MyBaseClass{
+   public void disp()
+   {
+       System.out.println("Parent class method");
+   }
+}
+class MyChildClass extends MyBaseClass{
+   protected void disp(){
+      System.out.println("Child class method");
+   }
+   public static void main( String args[]) {
+      MyChildClass obj = new MyChildClass();
+      obj.disp();
+   }
+}
+
