@@ -36,3 +36,14 @@ public class Lion implements Animal {
 	}
 
 }
+
+Result:
+
+Deer
+Nairobi, Africa
+18
+class com.training.class2.Lion
+Carnivorous
+25
+running test
+
