@@ -21,6 +21,7 @@ public class Lion implements Animal {
 		africanLion.home();
 		System.out.println(africanLion.sleep());
 		System.out.println(africanLion.getClass());
+		System.out.println(africanLion.category);
 		
 	}
 
