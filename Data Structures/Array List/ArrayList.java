@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.*;
 
 public class Temperatures {
 	
@@ -12,6 +12,7 @@ public class Temperatures {
     		System.out.println(weeklyTemperatures.get(1));
 		
 		weeklyTemperatures.add(2, 111);
+		Collections.sort(weeklyTemperatures); // Collections class under java.util has sort() method to sort list elements
 		
 		System.out.println(weeklyTemperatures);
 
