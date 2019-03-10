@@ -19,6 +19,8 @@ Extending our class with Thread Class,
 13. Name for the thread can also be set when creating a thread object like,
       Thread t1 = new Thread(<Runnable Object>, <Thread Name>)
       Note: Refer the .java multi threading implementation using runnable interface example for better understanding
+14. Thread.getPriority() will give you the priority of the thread. By default the thread priority is set to 5. Priority ranges from 1 - 10
+      1 means least priority and 10 means highest priority
 
 class Hi extends Thread {
    
