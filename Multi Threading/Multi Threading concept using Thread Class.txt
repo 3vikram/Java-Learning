@@ -13,6 +13,12 @@ Extending our class with Thread Class,
 7. To avoid both threads reaching scheduler at the same time we can use sleep() to make a thread wait for certain milli seconds
 8. When multiple threads reach at the same time to invoke run method, the priority is given based on the less time a thread takes to execute and many such parameters
 9. Thread1.join() will make the other threads to wait till the Thread1 is complete. We can also specify a delay inside the .join() in milli seconds, this will make sure that the thread1 will run for the specified time or till it is complete with in the specified time and then the other threads can start running.
+10. Thread1.isAlive() method will return if the thread is alive or not as a boolean value
+11. Thread.getName() method will return the thread name
+12. Thread.setName() method will allow you to set a thread name
+13. Name for the thread can also be set when creating a thread object like,
+      Thread t1 = new Thread(<Runnable Object>, <Thread Name>)
+      Note: Refer the .java multi threading implementation using runnable interface example for better understanding
 
 class Hi extends Thread {
    
