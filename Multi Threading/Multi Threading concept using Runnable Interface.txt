@@ -1,5 +1,7 @@
 Implementing our class with Runnable Interface,
 
+Runnable Interface does not have a start() method to invoke the run() method and hence we have to create a thread and pass the runnable object to it, by doing so the runnable object will have access to start() method vis Thread class
+
 As a first step, you need to implement a run() method provided by a Runnable interface. This method provides an entry point for the thread and you will put your complete business logic inside this method. Following is a simple syntax of the run() method −
 
 public void run( )
