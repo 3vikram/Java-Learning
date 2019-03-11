@@ -45,4 +45,4 @@ In Log4j,
     Version 2 of Log4j supports XML, JSON, and YAML configuration through the log4j2.xml, log4j2.json, and log4j2.yaml files
     
     
-  
+Resources, https://www.loggly.com/ultimate-guide/java-logging-basics/
