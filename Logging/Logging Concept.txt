@@ -1,0 +1,48 @@
+Loggers are necessary to capture events and log them to a Log handler
+
+Logging can be done via log Handler or appender which allows logs to be written in a file or console
+
+Log Formatter is used to write logs in a specific format to any Handler
+
+All Log frameworks provide a configuration file to set and manage the properties of the loggers, this can also be done programatically in your code
+
+Java.Util.Logging is a default logging framework comes with JDK. Their are other log rameworks like Log4j, Logback
+
+In Java.Util.Logging,
+    All logging properties are managed in "logging.properties" file
+    You can use a separate configuration file by specifying the java.util.logging.config.file property when starting a Java program. logging.properties files can also be created and stored with individual projects.
+    
+    The example below shows an Appender being defined in a global logging.properties file:
+    
+    # default file output is in user's home directory.
+    
+	    java.util.logging.FileHandler.pattern = %h/java%u.log
+	    java.util.logging.FileHandler.limit = 50000
+	    java.util.logging.FileHandler.count = 1
+      java.util.logging.FileHandler.formatter = java.util.logging.XmlFormatter
+      
+   Programatically, You create a logger as,
+   
+       	Logger logger = Logger.getLogger(MyClass.class.getName()); // .getLogger takes a String value and this is the logger name usually it    is advised to use the class name as the logger identity
+        
+        logger.setLevel(Level.WARNING); // This will set the logger to log events of level Warning and above
+         	
+        logger.warning(“This is a warning!”); // Logs the mesage in the paranthesis 
+        logger.log(Level.WARNING, “This is a warning!”); // This is same as above but a bit longer one
+        
+  Programatically, You can add a appender to a logger as follows,
+  
+        logger.addHandler(new ConsoleHandler()); //.addHandler method adds appender to the logger
+        
+  via "logging.properties" file we can add the following line,
+        
+        handlers=java.util.logging.ConsoleHandler, java.util.logging.FileHandler
+      
+In Log4j,
+    All logging properties are managed in "log4j.properties" file
+    Log4j contains a default configuration that outputs all log messages to the console
+    Log4j also supports an XML configuration syntax, which is defined in a log4j.xml file.
+    Version 2 of Log4j supports XML, JSON, and YAML configuration through the log4j2.xml, log4j2.json, and log4j2.yaml files
+    
+    
+  
