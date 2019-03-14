@@ -1,43 +1,58 @@
-ArrayList<String> olympicSports = new ArrayList<String>();
+collection (Concept)
+          Collection (Interface)
+                      Collections (Class)
 
-    olympicSports.add("Archery");
-		olympicSports.add("Boxing");
-		olympicSports.add("Cricket");
-		olympicSports.add("Diving");
-    
-    olympicSports.remove(3)
-    olympicSports.size()
-    olympicSports.contains("Cricket")
-    olympicSports.get(1)
-    olympicSports.subList(1,3) // returns the items in the Arraylist from index 1 till 2
-    olympicSports.set(2, "Baseball") // replaces the index 2 value to "Baseball"
-    olympicSports.removeAll()
-    olympicSports.isEmpty()
-    olympicSports.removeRange(0, 2)  // removes elements in the index from 0 till 1
-    olympicSports.clear()
-    olympicSports.removeAll(arrlist2); // removes the arrlist2 elements present in olympicSports
-    
-Source: https://www.geeksforgeeks.org/arraylist-in-java/
-    
-HashMap<String, Integer> hostCities = new HashMap<String, Integer>();
+Array definition,
 
-    hostCities.put("Beijing", 2008);
-    hostCities.put("London", 2012);
-    hostCities.put("Rio de Janeiro", 2016);
-    
-    hostCities.keySet()  // returns keys
-    hostCities.values() // returns values
-    hostCities.get("Beijing")
-    hostCities.size()
-    hostCities.containsKey("London")
-    hostCities.isEmpty()
-    hostCities.clear()
-    hostCities.containsKey("London")
-    hostCities.containsValue(2016)
-    hostCities.clone()
-    newhostCities.putAll(hostCities)
-    hostCities.remove("Beijing")
-    
-    HashMap doesn’t allow duplicate keys but allows duplicate values.
-    
-Source: https://www.geeksforgeeks.org/java-util-hashmap-in-java/
+int[] arr = new int[5]; // size is fixed to contain only 5 elements
+Object[] any = new Object[4];
+
+Arrays are fast compared to collection when performing action like retrieving elements in an array
+If the use case is to have fixed elements then go for Arrays
+
+ArrayList definition,
+
+Collection    
+          List (Interface)
+                          ArrayList (Class)
+
+Collection name = new ArrayList(); // Collection allows to add any data type elements
+name.add(10);
+name.add('test');
+
+ArrayList are efficient when their is no fixed element to be defined and thus your ArrayList can grow and shrink based on the requirement after once it's defined
+
+To use a specific type of Collection we have to use Generics, <> for Generics, () methods and it's arguments, [] arrays, {} for class and method definition and implementation
+
+Collection <Integer> age = new ArrayList <Integer>();
+
+You cannot insert a element in between elements and collection does not allow this, to overcome this we can define like below where List has some more implementations in it's interface, List works with index numbers.
+
+List <Integer> age = new ArrayList<Integer>();
+
+
+List can have duplicate elements in it.
+List will retrieve values with respect to the added sequence
+
+Set definition,
+
+Set is used to make sure no duplicate elements are present in the set.
+Set will retrieve values in random order unlike List
+
+Set <Integer> age = new HashSet<Integer>();
+
+To get a sorted elements format we can use Tree Set,
+
+TreeSet definition,
+
+Set <Integer> age = new TreeSet<Integer>();
+
+Above definition will give the elements in a sorted order
+
+Maps definition,
+
+Maps will store in the format of Key and Value pair.
+
+Duplicate values are allowed in Maps but Keys cannot be duplicate.
+
+Map <String><Integer> data = new HashMap<String><Integer>();
