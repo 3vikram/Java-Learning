@@ -18,6 +18,8 @@ public class Collections {
 		values.add(9);
 		values.add(2);
 		
+		values.remove(1);
+		
 		for (Integer value: values) {
 			System.out.println(value);
 		}
@@ -29,6 +31,5 @@ Result:
 
 4
 16
-1
 9
 2
