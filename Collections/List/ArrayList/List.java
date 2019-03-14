@@ -8,7 +8,7 @@ public class Collections {
 	public static void main(String[] args) {
 		
 		//List is the Interface, ArrayList is the implementation
-		
+		//Integer is the wrapper class of Int
 		List<Integer> values = new ArrayList<Integer>();
 		values.add(4);
 		values.add(16);
