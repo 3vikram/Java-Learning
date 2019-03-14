@@ -7,7 +7,10 @@ public class Collections {
 
 	public static void main(String[] args) {
 		
-		//Collection is an interface which has access to limited methods on an element, ArrayList is an implementation or Class
+		/*
+		Collection is an interface which has access to limited methods on an element, ArrayList is an implementation or Class
+		Collection does not support indexing, this means we cannot insert elements between existing elements in an Collection
+		*/
 		Collection values = new ArrayList();
 		values.add(4);
 		values.add("test");
