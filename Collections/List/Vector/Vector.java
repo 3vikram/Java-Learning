@@ -6,8 +6,14 @@ public class Collections {
 
 	public static void main(String[] args) {
 		
-		//Vector is the Implementation of List, introduced in Java 1.0 as their was no dynamic memory collection
+		/*
+		Vector is the Implementation of List, introduced in Java 1.0 as their was no dynamic memory collection
+		Vector increases the buffer by 100% when the maximum capactiy is reached
+		ArrayList increases the buffer by 50% when the maximum capacity is reached
 		
+		Vector are Thread safe as their methods use Synchoronised keyword and hence its slow
+		ArrayList is not a thread safe and hence it's fast
+		*/
 		Vector <Integer> values = new Vector<Integer>();
 		values.add(4);
 		values.add(16);
