@@ -15,7 +15,7 @@ public class Collections {
 		values.add(1);
 		values.add(9);
 		values.add(1, 2);
-		
+		values.sort(null);
 		for (int value: values) {
 			System.out.println(value);
 		}
@@ -23,8 +23,9 @@ public class Collections {
 }
 
 Result:
-4
-2
-16
 1
+2
+4
 9
+16
+
