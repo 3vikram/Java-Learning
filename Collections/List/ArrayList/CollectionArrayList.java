@@ -18,6 +18,8 @@ public class Collections {
 		values.add('C');
 		values.add(2.50);
 		
+		values.remove(4);
+		
 		for (Object value: values) {
 			System.out.println(value);
 		}
@@ -27,7 +29,6 @@ public class Collections {
 
 Result:
 
-4
 test
 true
 C
