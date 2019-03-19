@@ -3,6 +3,7 @@ import java.util.HashMap;
 public class RestaurantForEach {
 	public static void main(String[] args) {
 		
+		// Here the key value pairs are not ordered in sequence as it was added similar to HashSet
 		/*
 		    hostCities.put("Beijing", 2008);
 		    hostCities.put("London", 2012);
