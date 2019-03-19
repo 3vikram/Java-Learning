@@ -7,9 +7,6 @@ public class Collections {
 
 	public static void main(String[] args) {
 		
-		//Set is the Interface, TreeSet is the implementation, Set allows only unique values and no duplicate values
-		//Tree set helps in maintaining the elements in ascending order
-		
 		Map<Integer,Integer> values = new HashMap<>();
 		
 		values.put(1, 30);
