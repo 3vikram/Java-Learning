@@ -4,6 +4,9 @@ public class RestaurantForEach {
 	public static void main(String[] args) {
 		
 		// Here the key value pairs are not ordered in sequence as it was added similar to HashSet
+		// Trying to add existing key and a value to it will only update the key with the latest value
+		
+		// Trying to access a non-existent key value will fetch you null
 		/*
 		    hostCities.put("Beijing", 2008);
 		    hostCities.put("London", 2012);
