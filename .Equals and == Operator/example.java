@@ -14,12 +14,12 @@ public class Collections {
 							type is String */
 		
 		/* If 2 different objects hold same values then .equals() method will call the Objects.java. This compares the 
-			references of the objects as shown below,
+			references of the objects,
 		 
 		 String t1 = new String('one');
-		 String t2 = new String('two');
-		 System.out.println(t1.equals(t2)); // This will return false as .equals method now will be called from Object.java to
-		 compare references rather than values unlike for String type objects
+		 String t2 = new String('one');
+		 System.out.println(t1.equals(t2)); // This will return true as .equals method now will be called from String.java to
+		 compare the values for String type objects
 		 */
 	}
 }
