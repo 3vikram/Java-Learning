@@ -15,6 +15,7 @@ public class Collections {
 		System.out.println(s2.hashCode());
 		System.out.println(s1.equals(s2)); // .equals() method compares the contents of 2 objects
 		//Note: .equals() method can be overriden to compare at reference level as well based on our requirement
+		//In String class, all wrapper class and collections class .equals() method is overriden to compare at content level
 	}
 }
 
