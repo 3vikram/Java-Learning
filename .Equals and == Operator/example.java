@@ -1,9 +1,5 @@
 package com.java.practice;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
-
 public class Collections {
 
 	public static void main(String[] args) {
