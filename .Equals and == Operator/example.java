@@ -12,7 +12,8 @@ public class Collections {
 		System.out.println(s1 == s2); // Reference comparison is done, not content comparison
 		System.out.println(s1.equals(s2)); // .equals() compares object references similar to == operator, this calls the Object.java
 		
-		// If 2 different objects hold same values then .equals() method will call the String.java which is a overriden method of Object.java. This compares the values inisde the objects 
+		/* If 2 different objects hold same values then .equals() method will call the String.java which is a overriden method of 
+		 Object.java. This compares the values inisde the objects */
 	}
 }
 
