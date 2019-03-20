@@ -10,6 +10,8 @@
 
 6. Using Hashcodes search operations will be fast (O(1))
 
+7. Hashcode uses it's algorithm to come up with a Hascode using address of the object
+
 Linear search = One by one element search with O(n)
 
 Binary search = Taking mid or average search point with O(log2 n)
