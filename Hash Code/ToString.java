@@ -6,7 +6,10 @@ public class Collections {
 	public static void main(String[] args) {
 		
 		Collections c = new Collections();
-		System.out.println(c.toString()); // .toString() method returns classname@HashCode(Converted from int to Hex)
+		System.out.println(c.toString()); 
+		/* .toString() method returns classname@HashCode(Converted from int to Hex String)
+		getClass().getName+@IntegerToHexString(Hashcode)
+		*/
 	}
 }
 
