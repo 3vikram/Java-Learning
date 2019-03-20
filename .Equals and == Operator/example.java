@@ -10,15 +10,16 @@ public class Collections {
 		System.out.println(s1.hashCode());
 		System.out.println(s2.hashCode());
 		System.out.println(s1 == s2); // Reference comparison is done, not content comparison
-		System.out.println(s1.equals(s2)); // .equals() compares object references similar to == operator, this calls the Object.java
+		System.out.println(s1.equals(s2)); /* .equals() compares object contents, this calls the String.java as the object 
+							type is String */
 		
-		/* If 2 different objects hold same values then .equals() method will call the String.java which is a overriden method of 
-		 Object.java. This compares the values inisde the objects 
+		/* If 2 different objects hold same values then .equals() method will call the Objects.java. This compares the 
+			references of the objects as shown below,
 		 
 		 String t1 = new String('one');
 		 String t2 = new String('two');
-		 System.out.println(t1.equals(t2)); // This will return true as .equals method now will be called from String.java to
-		 compare values rather than references
+		 System.out.println(t1.equals(t2)); // This will return false as .equals method now will be called from Object.java to
+		 compare references rather than values unlike for String type objects
 		 */
 	}
 }
