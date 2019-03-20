@@ -8,7 +8,9 @@ public class Collections {
 		Collections c = new Collections();
 		System.out.println(c.toString()); 
 		/* .toString() method returns classname@HashCode(Converted from int to Hex String)
-		getClass().getName+@IntegerToHexString(Hashcode)
+		getClass().getName+@IntegerToHexString(Hashcode) , by default this is the implementation of toString() method
+		
+		toString() method can be overriden such that no hashcode is used and our way of implementation can be done
 		*/
 	}
 }
