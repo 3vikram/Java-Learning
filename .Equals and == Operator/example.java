@@ -13,7 +13,13 @@ public class Collections {
 		System.out.println(s1.equals(s2)); // .equals() compares object references similar to == operator, this calls the Object.java
 		
 		/* If 2 different objects hold same values then .equals() method will call the String.java which is a overriden method of 
-		 Object.java. This compares the values inisde the objects */
+		 Object.java. This compares the values inisde the objects 
+		 
+		 String t1 = new String('one');
+		 String t2 = new String('two');
+		 System.out.println(t1.equals(t2)); // This will return true as .equals method now will be called from String.java to
+		 compare values rather than references
+		 */
 	}
 }
 
