@@ -10,7 +10,7 @@
 
 6. Using Hashcodes search operations will be fast (O(1))
 
-7. Hashcode uses it's algorithm to come up with a Hascode using address of the object
+7. Hashcode uses it's algorithm to come up with a Hascode using address of the object (Using Object class hashcode method)
 
 Linear search = One by one element search with O(n)
 
