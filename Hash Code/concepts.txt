@@ -15,3 +15,9 @@
 Linear search = One by one element search with O(n)
 
 Binary search = Taking mid or average search point with O(log2 n)
+
+8. Proper way of generating Hashcode, is to make sure unique hashcode is generated for any given object
+   Improper way of generating Hashcode, will generate duplicate hashcodes for any Objects
+      With duplicate hashcodes it's hard to search the required object from the Hashcode bucket
+   
+9. 
