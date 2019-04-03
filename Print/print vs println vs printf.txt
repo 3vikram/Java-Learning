@@ -1,0 +1,6 @@
+println();  --> prints the line and puts the cursor to next line, does not allow string formatting
+printf();  --> allows you to write format specifier such as %d,%s...etc,and you can do almost everything using printf() that you can do with println(). To move the cursor to next line we have to use \n
+
+System.out.printf("I am %s and %d years old", name, age);
+
+print();  --> Prints the line but does not have any cursor and does not print the next line
