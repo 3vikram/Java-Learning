@@ -1,0 +1,3 @@
+CLI command example to create a maven web application project,
+
+mvn archetype:generate -DgroupId=com.javatpoint -DartifactId=CubeGeneratorWeb -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false  
