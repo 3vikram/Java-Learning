@@ -1,0 +1,61 @@
+Servlet technology is used to create a web application (resides at server side and generates a dynamic web page).
+
+Servlet technology is robust and scalable because of java language. Before Servlet, CGI (Common Gateway Interface) scripting language was common as a server-side programming language. However, there were many disadvantages to this technology. 
+
+There are many interfaces and classes in the Servlet API such as Servlet, GenericServlet, HttpServlet, ServletRequest, ServletResponse, etc. 
+
+What is a Servlet?
+
+Servlet can be described in many ways, depending on the context.
+
+    Servlet is a technology which is used to create a web application.
+    Servlet is an API that provides many interfaces and classes including documentation.
+    Servlet is an interface that must be implemented for creating any Servlet.
+    Servlet is a class that extends the capabilities of the servers and responds to the incoming requests. It can respond to any requests.
+    Servlet is a web component that is deployed on the server to create a dynamic web page.
+
+CGI (Common Gateway Interface)
+
+CGI technology enables the web server to call an external program and pass HTTP request information to the external program to process the request. For each request, it starts a new process.
+
+Disadvantages of CGI
+  
+    If the number of clients increases, it takes more time for sending the response.
+    For each request, it starts a process, and the web server is limited to start processes.
+    It uses platform dependent language e.g. C, C++, perl.
+    
+Advantages of Servlet
+
+There are many advantages of Servlet over CGI. The web container creates threads for handling the multiple requests to the Servlet. Threads have many benefits over the Processes such as they share a common memory area, lightweight, cost of communication between the threads are low. The advantages of Servlet are as follows:
+  
+    Better performance: because it creates a thread for each request, not process.
+    Portability: because it uses Java language.
+    Robust: JVM manages Servlets, so we don't need to worry about the memory leak, garbage collection, etc.
+    Secure: because it uses java language.
+
+Servlet Terminology 	Description
+
+Website: static vs dynamic 	It is a collection of related web pages that may contain text, images, audio and video.
+HTTP 	It is the data communication protocol used to establish communication between client and server.
+HTTP Requests 	It is the request send by the computer to a web server that contains all sorts of potentially interesting information.
+Get vs Post 	It gives the difference between GET and POST request.
+Container 	It is used in java for dynamically generating the web pages on the server side.
+Server: Web vs Application 	It is used to manage the network resources and for running the program or software that provides services.
+Content Type 	It is HTTP header that provides the description about what are you sending to the browser.
+
+Static vs Dynamic website
+
+Static Website 	
+Prebuilt content is same every time the page is loaded. 	
+It uses the HTML code for developing a website. 	
+It sends exactly the same response for every request. 	
+The content is only changed when someone publishes and updates the file (sends it to the web server). 	
+Flexibility is the main advantage of static website. 	
+
+Dynamic Website
+
+Content is generated quickly and changes regularly.
+It uses the server side languages such as PHP,SERVLET, JSP, and ASP.NET etc. for developing a website.
+It may generate different HTML for each of the request.
+The page contains "server-side" code which allows the server to generate the unique content when the page is loaded.
+Content Management System (CMS) is the main advantage of dynamic website.
