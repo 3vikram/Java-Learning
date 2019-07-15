@@ -1,0 +1,55 @@
+To set to the file system drive,
+git /c
+
+To traverse through the directory,
+git Users/
+
+To traverse through the directory containing space in the directory name,
+git Git\ Project
+
+To configure username of GitHub account,
+git config --global user.name "viku.vikram05@gmail.com"
+
+To configure email address of GitHub account,
+git config --global user.email "viku.vikram05@gmail.com"
+
+To clone a repository form GitHub,
+git clone https://github.com/3vikram/Maven-Learning.git
+
+To create a file in windows,
+touch test.txt
+
+To write into a file,
+vi test.txt
+
+shift + i --> Insert mode
+shift + a --> append mode
+escape --> come out of editing mode
+:x --> exit from vi editor
+
+To add a newly created file to GitHub repository,
+git add test.txt
+
+To know the status of the changes to be committed,
+git status
+
+To commit the changes or add the newly created file,
+git commit -m "a test file" test.txt
+
+-m --> commit message
+
+To push the commit,
+git push -u origin master
+
+To remove a file from the GitHub repo,
+git rm --cached test.txt
+
+--cached --> To remove the file from the repo and not delete it from the local file system use
+
+To commit the file removal change,
+git commit --amend -CHEAD
+or
+git commit -m "remove file1.txt"
+
+
+
