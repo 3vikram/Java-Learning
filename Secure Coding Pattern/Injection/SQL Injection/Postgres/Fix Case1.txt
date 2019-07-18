@@ -47,7 +47,7 @@ public class User {
       System.out.println("Opened database successfully");
 
       String query = "select * from users where username = ? limit 1";
-	    pst.setString(1, un);
+pst.setString(1, un);
       System.out.println(query);
       ResultSet rs = pst.executeQuery(query);
       if (rs.next()) {
