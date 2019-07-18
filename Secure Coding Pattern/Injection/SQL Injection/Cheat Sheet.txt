@@ -1,0 +1,8 @@
+http://pentestmonkey.net/cheat-sheet/sql-injection/postgres-sql-injection-cheat-sheet
+https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html
+https://www.exploit-db.com/papers/13650
+
+Tools,
+
+http://sqlmap.org/
+https://github.com/sqlmapproject/sqlmap/wiki/Introduction
