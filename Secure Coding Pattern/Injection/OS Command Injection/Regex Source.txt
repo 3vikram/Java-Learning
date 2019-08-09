@@ -1,0 +1,6 @@
+https://www.debuggex.com/cheatsheet/regex/python
+http://www.pyregex.com/
+
+Regex to find Email address that allows only _, in the first part followed by @anything.anything
+
+[\w|\w\.]+@[a-zA-Z\.\w]+
