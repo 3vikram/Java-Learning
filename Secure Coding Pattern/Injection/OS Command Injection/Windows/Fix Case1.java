@@ -1,5 +1,5 @@
 // ...
-if (!Pattern.matches("[0-9A-Za-z@.]+", dir)) {
+if (!Pattern.matches("[\w]+", dir)) {
   // Handle error
 }
 // allows
